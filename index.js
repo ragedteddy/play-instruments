@@ -16,9 +16,7 @@ for(var i=0 ; i<btns.length; i++){
     }) ;
 }
 
-document.addEventListener('keydown', (event) => {
-  var name = event.key;
-  var code = event.code;
-  var music = new Audio(playlist[name]);
-  music.play();
-}, false);
+document.addEventListener("keydown", function (event){
+    var music = new Audio(playlist[event.key]);
+    music.play();
+}) ;
